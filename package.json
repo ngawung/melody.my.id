@@ -2,12 +2,13 @@
   "name": "melody.my.id",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tools/index.js",
   "scripts": {
-    "run": "npm run less && hugo server",
+    "start": "npm run less && hugo server",
     "build": "npm run less && npm run hugo",
     "hugo": "hugo --minify",
-    "less": "node index.js"
+    "less": "node .",
+    "watch-less": "node tools/watch.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
     "write": "^2.0.0"
   },
   "dependencies": {
-    
+    "filesize": "^6.1.0",
+    "milligram": "^1.4.1",
+    "node-watch": "^0.7.1"
   }
 }
