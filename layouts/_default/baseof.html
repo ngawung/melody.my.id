@@ -9,8 +9,10 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
+	{{ $style := resources.Get "scss/main.scss" | resources.ToCSS (dict "outputStyle" "nested") | fingerprint }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
 	
-	<link rel="stylesheet" href="{{ "css/melody.css" | relURL }}">
 	{{ range .Site.Params.customCSS -}}
 		<link rel="stylesheet" href="{{ . | relURL }}?rnd={{ now.Unix }}">
 	{{- end }}
