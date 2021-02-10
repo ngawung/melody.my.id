@@ -1,0 +1,114 @@
+html {	
+	background-color: hsl(55,45%,90%);
+	background-image:
+		/* Pink lines */
+		linear-gradient(
+		    -116deg,
+			  transparent 40%,
+			  hsl(0,80%,80%) 0,
+			  hsl(0,80%,80%) 42%,
+			  transparent 42%
+		    ),
+		linear-gradient(
+		    116deg,
+			  transparent 41%,
+			  hsl(0,80%,80%) 0,
+			  hsl(0,80%,80%) 43%,
+			  transparent 43%
+		    ),
+		
+		
+		/* Black lines */
+		linear-gradient(
+		    -116deg,
+			  transparent 40%,
+			  hsl(0,0%,40%) 0,
+			  hsl(0,0%,40%) 42%,
+			  transparent 42%
+		    ),
+		linear-gradient(
+		    116deg,
+			  transparent 41%,
+			  hsl(0,0%,40%) 41%,
+			  hsl(0,0%,40%) 43%,
+			  transparent 43%
+		    ),
+		
+		/* Black diamonds */
+		linear-gradient(
+		    -115deg,
+			  hsl(0,0%,40%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    -65deg,
+			  hsl(0,0%,40%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    115deg,
+			  hsl(0,0%,40%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    65deg,
+			  hsl(0,0%,40%) 16.5%,
+			  transparent 0
+		    ),
+		
+		/* Pink diamonds */
+		linear-gradient(
+		    -115deg,
+			  hsl(0,80%,80%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    -65deg,
+			  hsl(0,80%,80%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    115deg,
+			  hsl(0,80%,80%) 16.5%,
+			  transparent 0
+		    ),
+		linear-gradient(
+		    65deg,
+			  hsl(0,80%,80%) 16.5%,
+			  transparent 0
+		    );
+	background-size: 
+		/* Pink lines */
+		8em 8em,
+		8em 8em,
+		
+		/* Black Lines */
+		8em 8em,
+		8em 8em,
+		
+		/* Black diamonds */
+		8em 8em,
+		8em 8em,
+		8em 8em,
+		8em 8em,
+		
+		/* Pink diamonds */
+		8em 8em,
+		8em 8em,
+		8em 8em,
+		8em 8em;
+	background-position: 
+		/* Pink lines */
+		3em -8em,
+		-3em -8em,
+		
+		/* Black Lines */
+		-9em 8em,
+		9em 8em,
+		
+		/* Black diamonds */
+		0, 0, 0, 0,
+		
+		/* Pink diamonds */
+		4em, 4em, 4em, 4em;
+	}
