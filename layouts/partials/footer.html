@@ -1,7 +1,14 @@
 <footer>
+    <div>
+        {{ $files := readDir "/static/image/button" }}
+        {{ range $files }}
+            <img src="/image/button/{{ .Name }}" />
+        {{ end }}
+    </div>
+    
 	<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}"><b>{{ if .Site.Copyright }}{{ .Site.Copyright }}{{ else }}{{ .Site.Title }}{{ end }}</b></a>.
 	{{- range .Site.Menus.footer }}
 	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
-        {{- end }}
+	        {{- end }}
 	</p>
 </footer>

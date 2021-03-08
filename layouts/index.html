@@ -1,7 +1,31 @@
 {{ define "main" }}
 
+    <div class="container logo">
+        {{ $image := resources.Get "image/melody.png" }}
+        {{ $resized := $image.Resize "500x" }}
+        <img src="{{ $resized.Permalink | relURL }}" />
+    </div>
     
+    <div class="container box2">
+        <p>i just started my site, so there's not much here at the moment!</p>
+    </div>
 
+    <div class="container box">
+        <p>Click those fancy buttons above to see my dumb thoughts, project im working on, and some other wierd stuff!</p>
+    </div>
+
+    <div class="container menu-container">
+        
+        
+        <div class="menu">
+            <img src="/image/placeholder.png" />
+            <p>Visit the HotSprings</p>
+        </div>
+        
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+    </div>
 	<!-- <main>
 	    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 	    {{ range $paginator.Pages }}
