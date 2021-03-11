@@ -1,14 +1,13 @@
 <footer>
-    <div>
+    <div style="text-align: center">
         {{ $files := readDir "/static/image/button" }}
         {{ range $files }}
             <img src="/image/button/{{ .Name }}" />
         {{ end }}
+        
+	    <p class="small margin-top">&copy; {{ now.Year }} <a href="#">{{ .Site.Title }}</a>.</p>
     </div>
-    
-	<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}"><b>{{ if .Site.Copyright }}{{ .Site.Copyright }}{{ else }}{{ .Site.Title }}{{ end }}</b></a>.
-	{{- range .Site.Menus.footer }}
-	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
-	        {{- end }}
-	</p>
+	
+    <span>melody.my.id is not affiliated with Marvelous Inc.<br>
+    Rune Factory, game content and materials are trademarks and copyrights of Marvelous Inc.</span>
 </footer>

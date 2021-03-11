@@ -8,14 +8,58 @@
   src: url('/css/font/Grandstander-clean.ttf')  format('truetype')
 }
 
+.font {
+    font-family: 'Grandstander' !important;
+    font-size: 5vw !important;
+    line-height: 7vw !important;
+    letter-spacing: 0.05vw !important;
+    font-weight: initial !important;
+}
+
+/////////
+
+.semongko {
+    font-family: 'semongko' !important;
+}
+
+.grandstander {
+    font-family: 'Grandstander' !important;
+}
+
+//////////
+
+.large {
+    font-size: 10vw !important;
+}
+
 .big {
-    
+    font-size: 8vw !important;
 }
 
 .small {
-    
+    font-size: 3.5vw !important;
+}
+
+////////
+
+.shadow {
+    text-shadow: 0 0 1vw white,0 0 1vw white,0 0 1vw white !important;
 }
 
 .accent {
-    
+    color: $accent !important;
+}
+
+.secondary {
+    color: $secondary !important;
+}
+
+////////
+
+.margin-top {
+    margin-top: 2vw !important;
+}
+
+.margin-bottom {
+    margin-bottom: 2vw !important;
 }

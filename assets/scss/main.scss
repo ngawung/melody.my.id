@@ -1,4 +1,7 @@
 @import "reset";
+
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
 /* $import (inline) "milligram"; */
 
 /* #### Variable #### */
@@ -9,8 +12,8 @@ https://lospec.com/palette-list/rustic-gb
 */
 
 $primary: #ee6a7c;
-$secondary: #edb4a1;
-$accent: #764462;
+$secondary: darken($primary, 10);
+$accent: #111;
 $background: #f1f4f7;
 $border: #5b4f51;
 
@@ -18,16 +21,44 @@ $border: #5b4f51;
 @import "font";
 
 html {
-    font-family: 'Grandstander';
+    /* font-family: 'Grandstander'; */
 }
 
 body {
     background-color: $background;
+    text-align: center;
     color: $primary;
+}
+
+p, span, a, button {
+    font-family: 'Grandstander';
     font-size: 5vw;
     line-height: 7vw;
     letter-spacing: 0.05vw;
+}
+
+a, a:visited {
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: underline;
+}
+
+li {
+    margin: 1.5vw 0;
+}
+
+button {
+    color: white;
     text-align: center;
+    /* text-shadow: 0px 0px 1vw white, 0px 0px 1vw white, 0px 0px 1vw white, 0px 0px 1vw white; */
+    background-color: rgba(darken($primary, 10), 0.6);
+    border-radius: 3vw;
+    box-shadow: 0 0 1vw rgba($border, 0.3);
+    border: none;
+    padding: 2vw;
+    width: 50%;
 }
 
 @keyframes fall {
@@ -71,8 +102,15 @@ header {
 footer {
     background-color: $primary;
     color: white;
-    padding: 10vw 0;
-    text-align: center;
+    padding: 10vw 0 2vw;
+    text-align: left;
+    
+    span {
+        font-family: "Sans-Serif";
+        font-size: 3vw ;
+        line-height: initial;
+        opacity: 0.7;
+    }
 }
 
 .logo {
@@ -92,7 +130,7 @@ footer {
 }
 
 .container {
-    margin: 10vw 5vw;
+    margin: 5vw 5vw 10vw;
     padding: 5vw;
 }
 
@@ -105,31 +143,24 @@ footer {
 }
 
 .box2 {
-    font-size: 4vw;
-    line-height: 5vw;
     color: white;
     text-align: center;
     /* text-shadow: 0px 0px 1vw white, 0px 0px 1vw white, 0px 0px 1vw white, 0px 0px 1vw white; */
     background-color: rgba(darken($primary, 30), 0.6);
     border-radius: 5vw;
     box-shadow: 0 0 1vw rgba($border, 0.3);
-    
-    p::before {
-        content: "test";
-        display: inline-block;
-    }
 }
 
 .menu-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
+    justify-content: space-evenly;
     
     .menu {
-        width: (100% / 3) - 2%;
+        width: (100% / 3) - 2.5%;
         /* border: red 1px solid; */
         box-shadow: 0 0 1vw rgba($border, 0.5);
+        margin: 0 1vw;
         margin-bottom: 5vw;
         border-radius: 5vw;
         overflow: hidden;
