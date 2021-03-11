@@ -1,4 +1,4 @@
-name: github pages
+name: neocities
 
 on:
     workflow_dispatch:
@@ -22,15 +22,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
-      
-      - name: Deploy to web
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ secrets.ftp_server }}
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
-          local-dir: ./public/
+        run: hugo --minify -b https://melodies.neocities.org/
       
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v1
