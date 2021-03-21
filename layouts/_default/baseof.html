@@ -24,9 +24,11 @@
 <body>
     {{ partial "background" . }}
     
-    {{ partial "header" . }}
-    {{ block "main" . }}{{ end }}
-    {{ partial "footer" . }}
+    <div class="wrap">
+        {{ partial "header" . }}
+        {{ block "main" . }}{{ end }}
+    </div>
+    
     
 </body>
 </html>

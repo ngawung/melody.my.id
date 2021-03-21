@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-    <div class="container logo">
+    <div class="logo">
         {{ $image := resources.Get "image/melody.png" }}
         {{ $resized := $image.Resize "500x" }}
         <img src="{{ $resized.Permalink | relURL }}" />
@@ -38,12 +38,12 @@
         
         <div class="menu">
             <img src="/image/placeholder.png" />
-            <p class="small">Project Changelogs</p>
+            <p>Project Changelogs</p>
         </div>
         
         <div class="menu">
             <img src="/image/placeholder.png" />
-            <p class="small">Boring Things</p>
+            <p>Boring Things</p>
         </div>
     </div>
     
