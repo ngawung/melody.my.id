@@ -29,22 +29,22 @@
 //////////
 
 .large {
-    font-size: 10vw !important;
+    font-size: 60px !important;
 }
 
 .big {
-    font-size: 8vw !important;
+    font-size: 40px !important;
 }
 
 .small {
-    font-size: 3.5vw !important;
+    font-size: 16px !important;
     line-height: initial;
 }
 
 ////////
 
 .shadow {
-    text-shadow: 0 0 1vw white,0 0 1vw white,0 0 1vw white !important;
+    text-shadow: 0 0 3px white,0 0 3px white,0 0 3px white !important;
 }
 
 .accent {
@@ -57,10 +57,14 @@
 
 ////////
 
+.title {
+    margin: 50px 0 30px;
+}
+
 .margin-top {
-    margin-top: 2vw !important;
+    margin-top: 20px !important;
 }
 
 .margin-bottom {
-    margin-bottom: 2vw !important;
+    margin-bottom: 20px !important;
 }
