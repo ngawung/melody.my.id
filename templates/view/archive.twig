@@ -1,0 +1,84 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+{# {{ craft.app.request.getSegments()|json_encode()|raw }} #}
+
+{# //////// MAIN CONFIG///////// #}
+
+{% set pagination_max = 2 %}
+{% set category_all = ["hotsprings"] %}
+
+{# ///////////////////////////// #}
+
+{% set sect = craft.app.request.getSegment(2) %}
+{% set year = craft.app.request.getSegment(3) %}
+{% set month = craft.app.request.getSegment(4) %}
+
+{% if sect is null and year is null and month is null %}
+    all archive
+    {% set query = craft.entries.section(category_all).orderBy('postDate desc').limit(pagination_max) %}
+{% elseif sect and year is null and month is null %}
+    section
+    {% set query = craft.entries.section(sect).orderBy('postDate desc').limit(pagination_max) %}
+{% elseif sect and year and month is null %}
+    year
+    {% set first = now | date_modify('first day of january ' ~ year ~ ' 00:00:00') %}
+    {% set last = now | date_modify('last day of december ' ~ year ~ ' 23:59:59') %}
+
+    {{ first|atom }} - {{ last|atom }}
+
+    {% set query = craft.entries.section(sect).after(first|atom).before(last|atom).orderBy('postDate desc').limit(pagination_max) %}
+{% elseif sect and year and year matches '/^\\d+$/' and month %}
+    {% set current_month = now|date(month~"/d/Y")|date("F") %}
+    {% set first = now | date_modify('first day of ' ~ current_month ~ ' ' ~ year ~ ' 00:00:00') %}
+    {% set last = now | date_modify(first|atom ~ " + 1 month ") %}
+
+    {{ first|atom }} - {{ last|atom }} - {{ current_month }}
+
+    {% set query = craft.entries.section(sect).after(first|atom).before(last|atom).orderBy('postDate desc').limit(pagination_max) %}
+{% elseif sect and year and year == "category"  and month %}
+    category
+    {% set query = craft.entries.section(sect).orderBy('postDate desc').limit(pagination_max) %}
+{% endif %}
+
+<script type="text/javascript" src="{{ siteUrl }}/hashover/api/count-link.php"></script>
+
+{% embed "component/box.twig" %}
+    {% block type %} box margin-bottom {% endblock type %}
+   
+    {% block content %}
+
+        {% paginate query as pageInfo, pageEntries %}
+
+        {% for list in pageEntries %}
+        
+            <div class="lastUpdate">
+                <div class="lastUpdate-featured">
+                    {% set imgUrl = list.featuredImage.one().url|default('https://via.placeholder.com/200x150') %}
+                    <a href="{{ list.url }}"><div style="background-image: url('{{ imgUrl }}');"></div></a>
+                </div>
+
+                <div class="lastUpdate-content">
+                    <div class="lastUpdate-meta">
+                        <a href="{{ list.url }}"><p class="lastUpdate-title">{{ list.title }}</p></a>
+                        <a class="section-label" href="{{ siteUrl }}{{ list.section.handle }}/archive">{{ list.section }}</a>
+                        <a href="{{ list.url }}"><span>{{ list.postDate|date("j/M/Y g:i a") }}</span></a>
+                    </div>
+                    <div class="lastUpdate-richtext">
+                        <a href="{{ list.url }}"><span>{{ list.richText|striptags|slice(0, 150) }}...</span></a>
+                    </div>
+                    {% if list.comment %}
+                        <div class="comment-count"><a class="hashover-count-link" href="{{ list.url }}#comments"></a></div>
+                    {% endif %}
+                </div>
+            </div>
+
+        {% endfor %}
+
+        {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous Page</a>{% endif %}
+        {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">Next Page</a>{% endif %}
+    {% endblock content %}
+{% endembed  %}
+    
+{% endblock content %}

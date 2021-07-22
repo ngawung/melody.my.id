@@ -1,0 +1,17 @@
+siteUid: null
+sortOrder: 5
+template: view/archive
+uriParts:
+  0: junk/
+  1:
+    - tag
+    - '[^\/]+'
+  3: /
+  4:
+    - year
+    - '\d{4}'
+  6: /
+  7:
+    - month
+    - '(?:0?[1-9]|1[012])'
+uriPattern: 'junk/<tag:[^\/]+>/<year:\d{4}>/<month:(?:0?[1-9]|1[012])>'

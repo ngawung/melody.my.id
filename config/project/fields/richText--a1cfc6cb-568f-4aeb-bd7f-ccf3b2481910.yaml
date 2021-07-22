@@ -1,0 +1,28 @@
+contentColumnType: text
+fieldGroup: ec0cad39-7be0-4264-b6d3-e4f124fa9a17 # Common
+handle: richText
+instructions: ''
+name: 'Rich Text'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - 4a914dde-98f1-4a3f-a2da-71d52cd6710f # Uploads
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

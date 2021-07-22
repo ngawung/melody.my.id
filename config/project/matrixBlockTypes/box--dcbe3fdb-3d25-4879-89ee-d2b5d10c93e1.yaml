@@ -1,0 +1,106 @@
+field: 575dfc73-ba03-469b-805b-7ce4486f86c8 # Warning Box
+fieldLayouts:
+  d9ca7932-7ea6-4d0e-ae7f-c409291017e4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 2a5946f7-2f3b-40cf-970c-247bc8887450 # type
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1fe75ba4-ff64-4776-9606-eee6a65f558a # message
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1fe75ba4-ff64-4776-9606-eee6a65f558a: # message
+    contentColumnType: text
+    fieldGroup: null
+    handle: msg
+    instructions: ''
+    name: message
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Message Text'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2a5946f7-2f3b-40cf-970c-247bc8887450: # type
+    contentColumnType: string
+    fieldGroup: null
+    handle: boxType
+    instructions: ''
+    name: type
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Box Normal'
+            -
+              - value
+              - box
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Box Red'
+            -
+              - value
+              - box2
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Box Green'
+            -
+              - value
+              - box3
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Box White'
+            -
+              - value
+              - content
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: box
+name: box
+sortOrder: 1

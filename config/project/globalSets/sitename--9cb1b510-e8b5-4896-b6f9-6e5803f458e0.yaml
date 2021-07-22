@@ -1,0 +1,19 @@
+fieldLayouts:
+  5181438e-876f-4240-a66e-d87ec04a10aa:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 76e13d2a-6f9f-44e5-a3de-a73c888ea8f6 # Text
+            instructions: ''
+            label: Sitename
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Name
+        sortOrder: 1
+handle: sitename
+name: siteName
+sortOrder: 3

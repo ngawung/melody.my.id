@@ -1,0 +1,24 @@
+<footer>
+    <div style="text-align: center ">
+        {% for button in footer.buttons.all() %}
+            {% if button.destination %} <a href="{{ button.destination }}" target="_blank" rel="noopener noreferrer"> {% endif %}
+                <img src="{{ button.image.one().url }}" alt="button.image.one().text">
+            {% if button.destination %} </a> {% endif %}
+        {% endfor %}
+    </div>
+
+    <p id="copyright" class="small margin-top margin-bottom font" style="text-align: center ">
+        <a class="small" href="{{ siteUrl }}">{{ sitename.text }}</a>.
+    </p>
+
+    <script>
+        let year = parseInt({{ footer.copyright }});
+        let date = new Date();
+        let newYear;
+        if (date.getFullYear() == year) newYear = year;
+        else newYear = `${year}-${date.getFullYear()}`
+        document.querySelector("#copyright").innerHTML =  `&copy; ${newYear} ` + document.querySelector("#copyright").innerHTML;
+    </script>
+    
+    <div class="disclaimer">{{ footer.disclaimer }}</div>
+</footer>

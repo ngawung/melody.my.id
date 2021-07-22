@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'semongko';
+  src: url('/style/font/aSemongko.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'grandstander';
+  src: url('/style/font/Grandstander-clean.ttf')  format('truetype')
+}
+
+.font {
+    font-family: 'Grandstander';
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1px;
+
+}
+
+p, span, a, a:visited, button, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="submit"], input[type="checkbox"], textarea, select {
+    font-family: 'Grandstander';
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: underline;
+}
+
+button, input[type="submit"], .button, .button:visited {
+    color: white;
+    text-align: center;
+    background-color: rgba(darken(@primary, 10), 0.6);
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(@border, 0.3);
+    border: none;
+    padding: 15px;
+    width: 50%;
+    text-decoration: none;
+	text-shadow: none;
+    display: inline-block;
+}
+
+.button-bg, .button-bg:visited {
+    background-color: rgba(darken(@primary, 10), 0.6);
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(@border, 0.3);
+    border: none;
+    text-decoration: none;
+	color: white;
+	text-shadow: none;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], textarea {
+    width: 100%;
+    font-size: 14px;
+    color: @primary;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid @primary;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    filter: hue-rotate(120deg);
+}
+
+textarea {
+    padding: 8px;
+    height: 80px;
+    text-align: left;
+}
+
+select {
+    border: @primary 1px solid;
+    background-color: white;
+    height: 30px;
+    width: 180px;
+    color: @primary;
+    border-radius: 5px;
+}
+
+/////////
+
+.semongko {
+    font-family: 'semongko' !important;
+}
+
+.grandstander {
+    font-family: 'Grandstander' !important;
+}
+
+//////////
+
+strong {
+    font-weight: bold;
+}
+
+.large {
+    font-size: 60px !important;
+}
+
+.big {
+    font-size: 40px !important;
+}
+
+.small {
+    font-size: 16px !important;
+    line-height: initial;
+}
+
+.small2 {
+    font-size: 14px !important;
+    line-height: initial;
+}
+
+.title {
+	margin: 50px 0 30px;
+}
+
+////////
+
+.shadow {
+    text-shadow: 0 0 3px white,0 0 3px white,0 0 3px white !important;
+}
+
+.box-shadow {
+    box-shadow: 0 0 15px rgba(@border, 0.3);
+}
+
+.accent {
+    color: @accent !important;
+}
+
+.secondary {
+    color: @secondary !important;
+}
+
+////////
+
+.margin-top {
+    margin-top: 20px !important;
+}
+
+.margin-bottom {
+    margin-bottom: 20px !important;
+}

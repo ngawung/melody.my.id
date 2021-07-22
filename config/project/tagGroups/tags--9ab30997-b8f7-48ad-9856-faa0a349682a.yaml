@@ -1,0 +1,18 @@
+fieldLayouts:
+  c48bdac7-69c2-4988-bddd-353185c5b7fa:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 76e13d2a-6f9f-44e5-a3de-a73c888ea8f6 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: tags
+name: 'Common Tags'

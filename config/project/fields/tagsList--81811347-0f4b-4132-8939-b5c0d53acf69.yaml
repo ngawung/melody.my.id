@@ -1,0 +1,22 @@
+contentColumnType: string
+fieldGroup: ec0cad39-7be0-4264-b6d3-e4f124fa9a17 # Common
+handle: tagsList
+instructions: ''
+name: 'Tags List'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: 'taggroup:9ab30997-b8f7-48ad-9856-faa0a349682a' # Common Tags
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Tags

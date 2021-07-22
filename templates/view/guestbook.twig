@@ -1,0 +1,19 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<style>
+    .hashover {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hashover-form-section, .hashover-comments-section {
+        flex-basis: 100%;
+    }
+</style>
+
+{% include "component/title.twig" with {text: "Guestbook"} %}
+<div id="hashover"></div>
+<script type="text/javascript" src="{{ siteUrl }}/hashover/comments.php"></script>
+    
+{% endblock content %}

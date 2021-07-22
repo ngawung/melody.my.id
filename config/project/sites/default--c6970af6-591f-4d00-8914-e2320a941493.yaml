@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en-US
+name: Melody
+primary: true
+siteGroup: 6e663e00-8ef2-40f2-8c1c-16fa97e76e6c # Melody
+sortOrder: 1

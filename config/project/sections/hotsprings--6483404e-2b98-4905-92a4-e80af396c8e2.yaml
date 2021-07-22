@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: false
+handle: hotsprings
+name: 'Visit Hotsprings'
+propagationMethod: all
+siteSettings:
+  c6970af6-591f-4d00-8914-e2320a941493: # Melody
+    enabledByDefault: true
+    hasUrls: true
+    template: hotsprings/_entry
+    uriFormat: 'junk/hotsprings/{postDate|date("Y")}/{postDate|date("m")}/{slug}'
+type: channel

@@ -1,0 +1,85 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+{% embed "component/box.twig" %}
+    {% block type %} box font breadcrumb {% endblock type %}
+   
+    {% block content %}
+        <a href="{{ siteUrl }}junk/{{ entry.section.handle }}">{{ entry.section.name }}</a><span class="separator">&gt</span>
+        <a href="{{ siteUrl }}junk/{{ entry.section.handle }}/{{ entry.postDate|date("Y") }}">{{ entry.postDate|date("Y") }}</a><span class="separator">&gt</span>
+        <a href="{{ siteUrl }}junk/{{ entry.section.handle }}/{{ entry.postDate|date("Y") }}/{{ entry.postDate|date("m") }}">{{ entry.postDate|date("F")|lower }}</a><span class="separator">&gt</span>
+        <span>{{ entry.title }}</span>
+    {% endblock content %}
+{% endembed  %}
+
+{% embed "component/box.twig" %}
+    {% block type %} box-content {% endblock type %}
+   
+    {% block content %}
+        {# <div class="row">
+            <div><button href="#" class="font back">&lt go back</button></div>
+        </div> #}
+
+        <div class="meta">
+            <h1>{{ entry.title }}</h1>
+            <span>{{ entry.postDate|date("j/M/Y g:i a") }}</span>
+            <div>
+                
+                {% for tag in entry.tagsList.all() %}
+                    <a href="{{ siteUrl }}junk/{{ entry.section.handle }}/category/{{ tag|lower|replace({' ' : '-'}) }}" class="font button-bg category">{{ tag }}</a>
+                {% endfor %}
+                
+            </div>
+        </div>
+
+        <div class="featured-image">
+            {% set imgUrl = entry.featuredImage.one().url|default('https://via.placeholder.com/200x150') %}
+            <div style="background-image: url('{{ imgUrl }}');"></div>
+        </div>
+
+        <div class="div markdown">{{ entry.richText }}</div>
+    {% endblock content %}
+{% endembed  %}
+
+{# Set parameters for prev/next elements list #}
+{% set params = craft.entries.section("hotsprings").orderBy('postDate asc') %}
+            
+{# Get the prev/next elements #}
+{% set prevEntry = entry.getPrev(params) %}
+{% set nextEntry = entry.getNext(params) %}
+
+{% if (prevEntry or nextEntry) %}
+    {% embed "component/box.twig" %}
+        {% block type %} box {% endblock type %}
+    
+        {% block content %}
+            <div class="div row">
+                <div>
+                    {% if prevEntry %} <a href="{{ prevEntry.url }}">&lt Prev<br>{{ prevEntry.title }}</a> {% endif %}
+                </div>
+                
+                <div>
+                    {% if nextEntry %} <a href="{{ nextEntry.url }}">Next &gt<br>{{ nextEntry.title }}</a> {% endif %}
+                </div>
+            </div>
+        {% endblock content %}
+    {% endembed  %}
+{% endif %}
+
+{% if entry.comment %}
+    {% include "component/title.twig" with {text: "Comments"} %}
+    <div id="hashover"></div>
+    <script type="text/javascript" src="{{ siteUrl }}/hashover/comments.php"></script>
+{% else %}
+    {% embed "component/box.twig" %}
+        {% block type %}box2 {% endblock type %}
+
+        {% block content %}
+            <p>Comment disabled for this post! :D</p>
+        {% endblock content %}
+    {% endembed  %}
+{% endif %}
+
+
+{% endblock content %}

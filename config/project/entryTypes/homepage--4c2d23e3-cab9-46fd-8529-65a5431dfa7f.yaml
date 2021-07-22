@@ -1,0 +1,95 @@
+fieldLayouts:
+  b9042c2f-7807-4854-a502-4698e5e68541:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 34a4aa6a-3687-4243-92d6-bb711ef478dc # Single Image
+            instructions: ''
+            label: Logo
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 575dfc73-ba03-469b-805b-7ce4486f86c8 # Warning Box
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Header
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: af5129ba-6525-4e12-b5ad-80278578e159 # Menu List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 381ffcc0-0d5f-47a0-8186-4ba74d14a2d5 # Guestbox
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Guestbook
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: fb3f817a-c099-44a0-bb06-02fbf4e2f533 # Social Media
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SocialMedia
+        sortOrder: 4
+handle: homepage
+hasTitleField: false
+name: Homepage
+section: 0bbe1b03-adc4-46f6-821a-de90f91e6b6e # Homepage
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

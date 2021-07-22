@@ -1,0 +1,11 @@
+enableVersioning: false
+handle: homepage
+name: Homepage
+propagationMethod: all
+siteSettings:
+  c6970af6-591f-4d00-8914-e2320a941493: # Melody
+    enabledByDefault: true
+    hasUrls: true
+    template: view/homepage
+    uriFormat: __home__
+type: single

@@ -1,0 +1,147 @@
+comments:
+  comments:
+    fieldLayouts:
+      e864c33e-4b8d-4d31-af1c-b3b6c374931b: null
+dateModified: 1626592514
+email:
+  fromEmail: ferdi.igsal@gmail.com
+  fromName: Melody
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0bbe1b03-adc4-46f6-821a-de90f91e6b6e: Homepage # Homepage
+    0d3a53a6-eb14-4bd8-9cf9-c43bae748bfe: lists # lists
+    1fdfe396-4b6b-4aa0-8be7-d34790388e24: logo # logo
+    1fe75ba4-ff64-4776-9606-eee6a65f558a: message # message
+    2a5946f7-2f3b-40cf-970c-247bc8887450: type # type
+    4a914dde-98f1-4a3f-a2da-71d52cd6710f: Uploads # Uploads
+    4c2d23e3-cab9-46fd-8529-65a5431dfa7f: Homepage # Homepage
+    4f30fc49-e618-45d1-a27e-9bdf2d67ab99: FullName # FullName
+    5ae88ae4-5daa-47ca-bc82-be62a483fc2e: Footer # Footer
+    6e5b1f4b-ef68-41f9-99eb-c71c93d7a30e: destination # destination
+    6e663e00-8ef2-40f2-8c1c-16fa97e76e6c: Melody # Melody
+    6ea8daa1-0cd8-4961-940d-5523c3317724: Name # Name
+    7f3003b2-209a-466b-b63b-5bb34e60ff3f: Hotsprings # Hotsprings
+    9ab30997-b8f7-48ad-9856-faa0a349682a: 'Common Tags' # Common Tags
+    9bcb873f-bd59-4518-a782-c0f9a51f8b2d: social # social
+    9cb1b510-e8b5-4896-b6f9-6e5803f458e0: siteName # siteName
+    9f46cf9c-d0ff-4f7e-baf2-c79f34d87467: Destination # Destination
+    9fee71a9-f43c-4fbf-b402-36a5b93dc8e4: Homepage # Homepage
+    13c41c89-4ddf-4f7d-b4c4-21cb897f5015: button # button
+    019b7987-93ad-4283-927c-8a271e8a18b6: Footer # Footer
+    20c99c05-0450-4174-b118-bffcf4d73835: logo # logo
+    34a4aa6a-3687-4243-92d6-bb711ef478dc: 'Single Image' # Single Image
+    49a0c742-53fb-43da-ac94-0385b464c129: menuList # menuList
+    56fe034f-f0fc-45c1-b895-f3c151eddc63: 'Buttons Matrix' # Buttons Matrix
+    72ee3cb4-4962-46e0-bff8-148c51a0771a: hotsprings # hotsprings
+    76e13d2a-6f9f-44e5-a3de-a73c888ea8f6: Text # Text
+    82e2853b-5169-41ff-8d21-be4e0f3acf0b: Name # Name
+    381ffcc0-0d5f-47a0-8186-4ba74d14a2d5: Guestbox # Guestbox
+    575dfc73-ba03-469b-805b-7ce4486f86c8: 'Warning Box' # Warning Box
+    647ebfd8-9fc5-4c42-bfa8-73e5b25a5d89: 'Background Image' # Background Image
+    925a1f46-f64b-44e7-a6b3-b8bddc463d2e: Destination # Destination
+    2658e1f3-6f2c-4023-917f-5936274caddc: 'Enable Comment' # Enable Comment
+    6483404e-2b98-4905-92a4-e80af396c8e2: 'Visit Hotsprings' # Visit Hotsprings
+    81811347-0f4b-4132-8939-b5c0d53acf69: 'Tags List' # Tags List
+    a1cfc6cb-568f-4aeb-bd7f-ccf3b2481910: 'Rich Text' # Rich Text
+    a91e7aa6-c9f1-4753-8b95-a448bfe66927: 'Image Button' # Image Button
+    ae294b29-4e2a-432b-ba3a-3f3330873791: destination # destination
+    af5129ba-6525-4e12-b5ad-80278578e159: 'Menu List' # Menu List
+    bb1572e1-834f-48dc-baa5-a486e8c23129: image # image
+    bc3e4c38-96f1-4335-a9e1-f3b361967bc5: guestbox # guestbox
+    c6970af6-591f-4d00-8914-e2320a941493: Melody # Melody
+    cc7ca747-8398-4378-8b28-609d2a9f4fbe: 'destination Entry' # destination Entry
+    cf30349c-229e-4772-bb79-3833376b60cb: Message # Message
+    dcbe3fdb-3d25-4879-89ee-d2b5d10c93e1: box # box
+    df02e7e3-cf4b-402b-902c-be7f0fa12dad: 'Message text' # Message text
+    e78b9c57-8d91-4913-9f40-41658dd5c53f: Disclaimer # Disclaimer
+    e404364c-82bd-4d0c-8bf7-1c7810562386: Image # Image
+    ead6b97c-0408-4950-b2ce-eec6d7c94786: 'Copyright Year' # Copyright Year
+    ec0cad39-7be0-4264-b6d3-e4f124fa9a17: Common # Common
+    f1c361b9-a429-4baf-a6bb-a2292159c9d1: Text # Text
+    f252fed1-dd0c-4aec-8e9f-f3f98c061235: 'Featured Image' # Featured Image
+    fb3f817a-c099-44a0-bb06-02fbf4e2f533: 'Social Media' # Social Media
+plugins:
+  comments:
+    enabled: true
+    licenseKey: U65CJHSUUQLG7M6BFGKMK5OU
+    settings:
+      allowAnonymous: null
+      allowAnonymousFlagging: null
+      allowAnonymousVoting: null
+      allowFlagging: true
+      allowGuest: false
+      allowGuestFlagging: false
+      allowGuestVoting: false
+      allowVoting: true
+      autoCloseDays: ''
+      closed: null
+      defaultQueryStatus:
+        - approved
+      downvoteCommentLimit: 5
+      enableGravatar: false
+      enableSpamChecks: true
+      flaggedCommentLimit: 5
+      guestNotice: ''
+      guestRequireEmailName: true
+      guestShowEmailName: true
+      hideVotingForThreshold: false
+      indexSidebarGroup: true
+      indexSidebarIndividualElements: false
+      indexSidebarLimit: 25
+      maxReplyDepth: null
+      maxUserComments: null
+      moderatorUserGroup: null
+      notificationAdminEnabled: false
+      notificationAuthorEnabled: true
+      notificationFlaggedEnabled: false
+      notificationModeratorApprovedEnabled: false
+      notificationModeratorEnabled: false
+      notificationReplyEnabled: true
+      notificationSubscribeAuto: false
+      notificationSubscribeCommentEnabled: false
+      notificationSubscribeDefault: true
+      notificationSubscribeEnabled: false
+      outputDefaultCss: true
+      outputDefaultJs: true
+      permissions: null
+      placeholderAvatar: null
+      recaptchaEnabled: false
+      recaptchaKey: null
+      recaptchaSecret: null
+      requireModeration: true
+      securityBanned: null
+      securityFlooding: null
+      securityMatchExact: false
+      securityMaxLength: null
+      securityModeration: null
+      securitySpamlist: null
+      showAvatar: true
+      showCustomFieldInstructions: false
+      showCustomFieldNames: false
+      showTimeAgo: true
+      structureUid: 33eb982d-3011-4a67-8ddb-dbff09a62e7e
+      templateEmail: null
+      templateFolderOverride: null
+      users: null
+  image-resizer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: Melody
+  retryDuration: null
+  schemaVersion: 3.7.7
+  timeZone: Asia/Jakarta
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,37 @@
+fieldLayouts:
+  9bc5eb5e-f4fe-498b-9ddd-c05e7725690c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 56fe034f-f0fc-45c1-b895-f3c151eddc63 # Buttons Matrix
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ead6b97c-0408-4950-b2ce-eec6d7c94786 # Copyright Year
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e78b9c57-8d91-4913-9f40-41658dd5c53f # Disclaimer
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Main Section'
+        sortOrder: 1
+handle: footer
+name: Footer
+sortOrder: 2

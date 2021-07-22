@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 9fee71a9-f43c-4fbf-b402-36a5b93dc8e4 # Homepage
+handle: warningBox
+instructions: ''
+name: 'Warning Box'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_warningbox}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

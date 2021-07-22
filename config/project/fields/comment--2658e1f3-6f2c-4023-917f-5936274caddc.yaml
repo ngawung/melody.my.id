@@ -1,0 +1,14 @@
+columnSuffix: owzuiheg
+contentColumnType: boolean
+fieldGroup: ec0cad39-7be0-4264-b6d3-e4f124fa9a17 # Common
+handle: comment
+instructions: ''
+name: 'Enable Comment'
+searchable: false
+settings:
+  default: true
+  offLabel: Disable
+  onLabel: Enable
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,0 +1,78 @@
+fieldLayouts:
+  73bf356c-e290-4548-9883-4b97b739a4a1:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: f252fed1-dd0c-4aec-8e9f-f3f98c061235 # Featured Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 2658e1f3-6f2c-4023-917f-5936274caddc # Enable Comment
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 81811347-0f4b-4132-8939-b5c0d53acf69 # Tags List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Meta
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: a1cfc6cb-568f-4aeb-bd7f-ccf3b2481910 # Rich Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 2
+handle: hotsprings
+hasTitleField: true
+name: Hotsprings
+section: 6483404e-2b98-4905-92a4-e80af396c8e2 # Visit Hotsprings
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

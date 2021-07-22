@@ -1,0 +1,113 @@
+field: af5129ba-6525-4e12-b5ad-80278578e159 # Menu List
+fieldLayouts:
+  49872758-48ea-4b05-afcf-96afb0fba85a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 647ebfd8-9fc5-4c42-bfa8-73e5b25a5d89 # Background Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f1c361b9-a429-4baf-a6bb-a2292159c9d1 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9f46cf9c-d0ff-4f7e-baf2-c79f34d87467 # Destination
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9f46cf9c-d0ff-4f7e-baf2-c79f34d87467: # Destination
+    contentColumnType: string
+    fieldGroup: null
+    handle: destination
+    instructions: ''
+    name: Destination
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: 'Destination Entry'
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  647ebfd8-9fc5-4c42-bfa8-73e5b25a5d89: # Background Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgImage
+    instructions: ''
+    name: 'Background Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:4a914dde-98f1-4a3f-a2da-71d52cd6710f' # Uploads
+      defaultUploadLocationSubpath: menuList
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:4a914dde-98f1-4a3f-a2da-71d52cd6710f' # Uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:4a914dde-98f1-4a3f-a2da-71d52cd6710f' # Uploads
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  f1c361b9-a429-4baf-a6bb-a2292159c9d1: # Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: Text
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: lists
+name: lists
+sortOrder: 1

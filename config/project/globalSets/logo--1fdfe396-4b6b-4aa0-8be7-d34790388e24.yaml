@@ -1,0 +1,19 @@
+fieldLayouts:
+  375eca67-0190-4f5f-84fb-33660ef3d31f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 34a4aa6a-3687-4243-92d6-bb711ef478dc # Single Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: logo
+name: logo
+sortOrder: 4

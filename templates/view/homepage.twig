@@ -1,0 +1,124 @@
+{% extends "base" %}
+
+{% block content %}
+
+<div class="logo">
+    <img src="{{ entry.image.one().getUrl('logo') }}" alt="Melody"/>
+</div>
+
+{% embed "component/box.twig" %}
+    {% block type %} box {% endblock type %}
+   
+    {% block content %}
+        <p>i just started my site, so there's not much here at the moment!</p>
+    {% endblock content %}
+{% endembed  %}
+
+
+{% embed "component/box.twig" %}
+    {% block type %} box2 {% endblock type %}
+   
+    {% block content %}
+        <p>Website ini masih dalam tahap pengembangan...!</p>
+    {% endblock content %}
+{% endembed  %}
+
+{% embed "component/box.twig" %}
+    {% block type %} box3 {% endblock type %}
+   
+    {% block content %}
+        <p>Are you lost? looking for my portofolio? <a href='#'>Click here</a></p>
+    {% endblock content %}
+{% endembed  %}
+
+
+{% embed "component/box.twig" %}
+    {% block type %} box {% endblock type %}
+   
+    {% block content %}
+        <p>Click those fancy buttons below to see my dumb thoughts, project im working on, and some other wierd stuff!</p>
+    {% endblock content %}
+{% endembed  %}
+
+<div class="center">
+    <div class="menu-container font">
+        {% for menu in entry.menuList.all() %}
+            <a href="{{ menu.destination|default('#') }}">
+                <div class="menu">
+                    <img src="{{ menu.bgImage.one().getUrl('menulist') | default('https://via.placeholder.com/140x200') }}" />
+                    <p>{{ menu.text }}</p>
+                </div>    
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% include "component/title.twig" with {text: "Latest Update"} %}
+
+<script type="text/javascript" src="{{ siteUrl }}/hashover/api/count-link.php"></script>
+
+{% embed "component/box.twig" %}
+    {% block type %} box margin-bottom {% endblock type %}
+   
+    {% block content %}
+        {% set lists = craft.entries.section(['hotsprings']).orderBy('postDate desc').limit(5) %}
+        {% for list in lists.all() %}
+        
+            <div class="lastUpdate">
+                <div class="lastUpdate-featured">
+                    {% set imgUrl = list.featuredImage.one().url|default('https://via.placeholder.com/200x150') %}
+                    <a href="{{ list.url }}"><div style="background-image: url('{{ imgUrl }}');"></div></a>
+                </div>
+
+                <div class="lastUpdate-content">
+                    <div class="lastUpdate-meta">
+                        <a href="{{ list.url }}"><p class="lastUpdate-title">{{ list.title }}</p></a>
+                        <a class="section-label" href="{{ siteUrl }}{{ list.section.handle }}/archive">{{ list.section }}</a>
+                        <a href="{{ list.url }}"><span>{{ list.postDate|date("j/M/Y g:i a") }}</span></a>
+                    </div>
+                    <div class="lastUpdate-richtext">
+                        <a href="{{ list.url }}"><span>{{ list.richText|striptags|slice(0, 150) }}...</span></a>
+                    </div>
+                    {% if list.comment %}
+                        <div class="comment-count"><a class="hashover-count-link" href="{{ list.url }}#comments"></a></div>
+                    {% endif %}
+                </div>
+            </div>
+
+        {% endfor %}
+    {% endblock content %}
+{% endembed  %}
+
+<a class="button" href="{{ siteUrl }}junk">View More</a>
+
+{% embed "component/box.twig" %}
+    {% block type %} box {% endblock type %}
+   
+    {% block content %}
+    {% set guestbox = entry.guestbox.one() %}
+        <p>{{ guestbox.msg }}</p>
+        <a href="{{ siteUrl }}guestbook"><img class="margin-top img-transparent" style="width: 80%; max-width: 300px" src="{{ guestbox.image.one().url }}" /></a>
+    {% endblock content %}
+{% endembed  %}
+
+
+{# {% include "component/title.twig" with {text: "ChatBox"} %} #}
+
+{% embed "component/box.twig" %}
+    {% block type %} box {% endblock type %}
+   
+    {% block content %}
+    <p>My Social media</p>
+            <span class="small">im usually only active on Facebook...</span>
+            <div>
+                {% for social in entry.socials.all() %}
+                    <a href="{{ social.destination }}" class="social" target="_blank">{{ social.socialName }}</a>
+                {% endfor %}
+            </div>
+            <span class="small2">Find all my social link in <a>Find Me</a> menu...</span>
+
+    {% endblock content %}
+{% endembed  %}
+
+
+{% endblock %}

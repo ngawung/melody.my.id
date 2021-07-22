@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% include "component/eruda.twig" %}
+    {% include "component/meta-header.twig" %}
+
+    <title>melody-web</title>
+
+</head>
+<body>
+
+    {% include "component/background.twig" %}
+
+    {% include "component/header.twig" %}
+
+    <div class="wrap">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    {% include "component/footer.twig" %}
+</body>
+</html>

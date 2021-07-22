@@ -1,0 +1,13 @@
+{
+  "name": "craft",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "lessc less/bundle.less web/style/css/bundle.css",
+    "watch-css": "onchange less -- yarn build-css"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1"
+  }
+}

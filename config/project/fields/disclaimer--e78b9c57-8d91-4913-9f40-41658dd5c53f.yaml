@@ -1,0 +1,27 @@
+contentColumnType: text
+fieldGroup: 5ae88ae4-5daa-47ca-bc82-be62a483fc2e # Footer
+handle: disclaimer
+instructions: ''
+name: Disclaimer
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

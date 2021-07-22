@@ -1,0 +1,185 @@
+.hashover {
+    .hashover-title,
+    .hashover-required-fields,
+    .hashover-formatting,
+    .hashover-formatting-table,
+    .hashover-end-links
+    {
+        display: none;
+        outline: blue 3px dotted;
+    }
+
+    .comment-bubble-box {
+        font-family: 'Grandstander';
+        font-size: 14px;
+        line-height: initial;
+        letter-spacing: 1px;
+    }
+
+    .hashover-form-section {
+        padding: 20px;
+        margin: 30px 16px 50px;
+        text-align: center;
+        text-shadow: 0px 0px 3px white, 0px 0px 3px white, 0px 0px 3px white, 0px 0px 3px white;
+        background-image: linear-gradient(rgba(white, 0.6), rgba(white, 0.6), rgba(@primary, 0.2));
+        border-radius: 20px;
+        box-shadow: 0 0 5px rgba(@border, 0.3);
+    }
+
+    .hashover-balloon, .hashover-edit-form {
+        // border: black 5px  dotted;
+
+        .hashover-inputs {
+            // outline: blue 1px solid;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            .hashover-avatar-image {
+                display: none;
+            }
+
+            .hashover-input-cell {
+                flex-basis: 32.5%;
+                display: inline-block;
+                // outline: red 1px solid;
+            }
+        }
+
+        .hashover-form-footer {
+            text-align: left;
+
+            input[type="checkbox"] {
+                display: inline-block;
+                vertical-align: middle;
+            }
+    
+            label, a {
+                font-size: 12px;
+                display: inline-block;
+            }
+
+            a {
+                float: right;
+                margin-right: 5px;
+            }
+
+            input[type="submit"] {
+                display: block;
+                margin: 15px auto;
+                font-size: 16px;
+                padding: 5px;
+            }
+        }
+    }
+
+    /////////////////////
+    .hashover-comments-section {
+        margin: 30px 16px 50px;
+        padding: 20px;
+        text-align: center;
+        text-shadow: 0px 0px 3px white, 0px 0px 3px white, 0px 0px 3px white, 0px 0px 3px white;
+        background-image: linear-gradient(rgba(white, 0.6), rgba(white, 0.6), rgba(@primary, 0.2));
+        border-radius: 20px;
+        box-shadow: 0 0 5px rgba(@border, 0.3);    
+
+        .hashover-count-sort {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            span {
+                font-size: 12px;
+                line-height: 12px;
+            }
+
+            select {
+                font-size: 10px;
+                color: darken(@primary, 15);
+                height: 20px;
+            }
+        }
+
+        .hashover-reply {
+            margin-left: 5%;
+        }
+
+        .comment-box {
+            // outline: dotted black 3px;
+            margin: 10px 0;
+            // padding: 10px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .comment-avatar {
+                // outline: 1px red solid;
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 45px;
+                
+                span {
+                    width: 45px;
+                    height: 45px;
+                    display: inline-block;
+                }
+                div {
+                    border-radius: 8px;
+                    width: 100%;
+                    height: 100%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .comment-bubble {
+                margin-left: 5px;
+                flex-grow: 1;
+                padding: 5px;
+                background-color: rgba(white, 0.2);
+                border-radius: 10px;
+                border: 1px solid rgba(@primary, 0.6);;
+
+                .comment-name {
+                    text-align: left;
+                    p, a, span {
+                        margin-right: 5px;
+                        color: darken(@primary, 15);
+                        font-size: 12px;
+                        list-style: initial;
+                        text-align: left;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    list-style: initial;
+                    text-align: left;
+                }
+
+                .comment-meta {
+                    text-align: left;
+
+                    .hashover-likes {
+                        font-weight: normal !important;
+                        color: #6ea8fa;
+                    }
+
+                    a, p, span {
+                        margin-right: 5px;
+                        color: darken(@primary, 15);
+                        font-size: 10px;
+                        list-style: initial;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .comment-reply {
+        display: inline;
+    }
+}

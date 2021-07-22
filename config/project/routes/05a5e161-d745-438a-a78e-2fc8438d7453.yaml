@@ -1,0 +1,13 @@
+siteUid: null
+sortOrder: 6
+template: view/archive
+uriParts:
+  0: junk/
+  1:
+    - tag
+    - '[^\/]+'
+  3: /category/
+  4:
+    - tag
+    - '[^\/]+'
+uriPattern: 'junk/<tag:[^\/]+>/category/<tag2:[^\/]+>'
