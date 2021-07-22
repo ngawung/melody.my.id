@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comment>
+	<body>
+		ok
+	</body>
+	<date>2021-07-17T12:07:54+0700</date>
+	<login_id>ec8b07a315ab5ad373c827e0d8fb0eed4e4b8c50</login_id>
+	<email>jTcdhwylTDLo9ts2f0C7bnORAsTEYzTQDYPTh4vYwXVG/1Bc1Y+2Q5rgF2FUFood</email>
+	<encryption>3,1,18,21,3,4,7,14,11,14,1,0,21,5,11,2</encryption>
+	<email_hash>c90875b18ab0bf321abe711dc2fbfa8d</email_hash>
+	<notifications>yes</notifications>
+	<website>http://localhost:8080</website>
+	<ipaddr>127.0.0.1</ipaddr>
+</comment>
